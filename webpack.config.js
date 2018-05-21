@@ -40,12 +40,12 @@ module.exports = {
                 template: 'src/index.html'
             }
         ),
-        // new CopyWebpackPlugin(
-        //     [
-        //         {from: 'src/assets', to: 'assets'},
-        //         {from: 'src/netlify'}
-        //     ]
-        // )
+        new CopyWebpackPlugin(
+            [
+                {from: 'src/assets', to: 'assets'},
+                {from: 'src/netlify'}
+            ]
+        )
 
     ],
     devServer: {

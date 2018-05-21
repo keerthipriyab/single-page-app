@@ -7,9 +7,9 @@ const extractSass = new ExtractTextPlugin({filename: 'bundle.[hash].css'});
 
 
 module.exports = {
-    entry:  {
-        bundle: './src/js/app.js'
-    },
+    // entry:  {
+    //     bundle: './src/js/app.js'
+    // },
     output: {
         filename: 'bundle.[hash].js',
         path:     path.resolve(__dirname, 'dist')
@@ -40,12 +40,12 @@ module.exports = {
                 template: 'src/index.html'
             }
         ),
-        new CopyWebpackPlugin(
-            [
-                {from: 'src/assets', to: 'assets'},
-                {from: 'src/netlify'}
-            ]
-        )
+        // new CopyWebpackPlugin(
+        //     [
+        //         {from: 'src/assets', to: 'assets'},
+        //         {from: 'src/netlify'}
+        //     ]
+        // )
 
     ],
     devServer: {

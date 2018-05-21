@@ -1,4 +1,4 @@
-# Single Page front end
+# Single Page App
 
 
 # Tooling

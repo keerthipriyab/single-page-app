@@ -3,7 +3,7 @@
   "description": "Single Page App",
   "scripts": {
     "development": "webpack-dev-server --mode development --inline --progress --port 8000",
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --mode production --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Prasanna Dommalapati",

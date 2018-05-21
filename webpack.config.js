@@ -3,7 +3,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const extractSass = new ExtractTextPlugin({filename: 'bundle.[hash].scss'});
+const extractSass = new ExtractTextPlugin({filename: 'bundle.[hash].css'});
 
 
 module.exports = {
